@@ -11,15 +11,12 @@ In this first version our main goal is to characterize the active and passive de
 ## Cryochip Block Diagram
 
  <p align="center">
-  <img width="800" height="500" src="/Images/N/block.png">
+  <img width="800" height="500" src="/Images/cryochip.svg">
 </p>
 
 
 ## Opencryo blocks
 
- <p align="center">
-  <img width="800" height="500" src="/Images/N/circuit.png">
-</p>
 
 ### Description of opencryo blocks
 
