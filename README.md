@@ -13,7 +13,7 @@ In this first version our main goal is to characterize the active and passive de
 ### High-level chip footprint
 
  <p align="center">
-  <img width="800" height="500" src="/Images/cryochip.svg">
+  <img width="800" height="500" src="/images/cryochip.svg">
 </p>
 
 ## Opencryo blocks
@@ -39,10 +39,10 @@ In this first tape out will be submitted many transistors, passives and core blo
 
 One of the pre-requisites to use open MPW is to use an user area inside a SoC named Caravel. Due to that requirement, we did a separated repository for that: XXX
 
-### References
+## References
 
 ...
 
-### Acknowledgements
+## Acknowledgements
 
 ...
