@@ -1,0 +1,4 @@
+####
+#set XSCHEM_LIBRARY_PATH {}
+append XSCHEM_LIBRARY_PATH :${XSCHEM_SHAREDIR}/xschem_library
+append XSCHEM_LIBRARY_PATH :/home/brito/sky130_opensource_skel/xschem_sky130/
