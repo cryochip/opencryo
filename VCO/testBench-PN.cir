@@ -1,0 +1,18 @@
+I-V Characteristics of CD4007
+*Including the CD4007 model file
+
+.include idealVCO.mod
+
+
+Xosc1 6 0 idealVCO
+
+* PSS Analysis
+* .pss gfreq tstab oscnob psspoints harms sciter steadycoeff <uic>
+
+.pss 1e3 20e-3 5 1024 10 150 5e-3 uic
+.control
+run
+plot V(6) 
+*exit
+.endc
+.end
