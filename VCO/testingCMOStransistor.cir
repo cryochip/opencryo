@@ -1,0 +1,33 @@
+**.subckt test_nmos G1v8 D1v8 B
+*.ipin G1v8
+*.ipin D1v8
+*.ipin B
+
+.include sky130_nfet_1v8_lvt.mod
+
+.include /home/adauto/Circuits/skywater/skywater-pdk/libraries/sky130_fd_pr/latest/models/corners/tt.spice
+
+Vds D1v8 0 1.8
+Vgs G1v8 0 0.8
+
+XM1 D1v8 G1v8 S 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1.26 ad=W*0.29 pd=2*(W+0.29) as_=W*0.29 ps=2*(W+0.29) nrd=0.29/W nrs=0.29/W sa=0 sb=0 sd=0 nf=1 mult=1
+
+Vss S 0 0V
+
+* this experimental option enables mos model bin
+* selection based on W/NF instead of W
+.option wnflag=1
+.option savecurrents
+.control
+save all
+*@XM1.msky130_fd_pr__nfet_01v8_lvt[gm]
+dc vgs 0 1.8 0.001 
+
+
+plot Vss#branch
+*exit
+
+.endc
+
+
+.end
