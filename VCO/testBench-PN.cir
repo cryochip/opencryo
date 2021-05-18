@@ -1,10 +1,11 @@
-I-V Characteristics of CD4007
-*Including the CD4007 model file
+PSS Simulation of the VCO subckts
 
 .include idealVCO.mod
+.include vco.cir
 
+*Xosc1 6 0 idealVCO
 
-Xosc1 6 0 idealVCO
+Xosc1 6 0 0 0 0 0 ColpitOscilator
 
 * PSS Analysis
 * .pss gfreq tstab oscnob psspoints harms sciter steadycoeff <uic>
