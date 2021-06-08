@@ -10,10 +10,13 @@ Xosc1 6 0 0 0 0 0 ColpitOscilator
 * PSS Analysis
 * .pss gfreq tstab oscnob psspoints harms sciter steadycoeff <uic>
 
-.pss 1e3 20e-3 5 1024 10 150 5e-3 uic
+*.pss 1e3 20e-3 5 1024 10 150 5e-3 uic
+.pss 5e9 10n 6 1024 5 150 5e-3 uic
+*.tran 0.1ns 100ns
 .control
 run
-plot V(6) 
+print V(6) 
+plot V(6)
 *exit
 .endc
 .end
