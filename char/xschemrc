@@ -1,0 +1,13 @@
+####
+#set XSCHEM_LIBRARY_PATH {}
+append XSCHEM_LIBRARY_PATH :${XSCHEM_SHAREDIR}/xschem_library
+append XSCHEM_LIBRARY_PATH :/home/brito/sky130_opensource_skel/xschem_sky130/
+
+set editor { xterm -geometry 100x40 -e vim }
+
+###########################################################################
+#### SKYWATER PDK SPECIFIC VARIABLES
+###########################################################################
+set SKYWATER_MODELS /edatools/DKs/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest
+set SKYWATER_STDCELLS /edatools/DKs/skywater-pdk/libraries/sky130_fd_sc_hd/latest
+

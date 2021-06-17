@@ -1,0 +1,51 @@
+
+#################################################
+# ASITIC ver (Linux_Intel) Grackle INPUT LOG File
+# Generated on Thu Jun 17 15:50:26 2021
+#################################################
+
+optsq
+7 5
+indVCO
+250
+1.5 0.01 2
+5 0.1 15
+6
+5
+5
+del indVCO
+optsq
+
+optarea
+7 5
+indVCO
+2
+5 0.1 15
+200
+200 10 250
+6
+5
+5
+3
+del indVCO
+optsq
+7 5
+indVCO
+200
+1.5 0.01 3
+5 0.1 20
+6
+5
+5
+del indVCO
+optsq
+7 1
+indVCO
+300
+1 0.01 4
+2 0.1 20
+6
+5
+5
+cifsave indVCO indVCO.cif
+exit
