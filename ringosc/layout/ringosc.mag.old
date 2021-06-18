@@ -1,0 +1,27 @@
+magic
+tech sky130A
+timestamp 1623970536
+<< locali >>
+rect -10 10 10 30
+rect 585 10 605 30
+<< metal1 >>
+rect -10 205 15 295
+rect -10 50 15 140
+use inv  inv_2
+timestamp 1623968764
+transform 1 0 520 0 1 45
+box -120 -55 85 275
+use inv  inv_1
+timestamp 1623968764
+transform 1 0 315 0 1 45
+box -120 -55 85 275
+use inv  inv_0
+timestamp 1623968764
+transform 1 0 110 0 1 45
+box -120 -55 85 275
+<< labels >>
+rlabel locali -10 20 -10 20 7 IN
+rlabel locali 605 20 605 20 3 OUT
+rlabel metal1 -10 250 -10 250 7 VDD
+rlabel metal1 -10 95 -10 95 7 VSS
+<< end >>

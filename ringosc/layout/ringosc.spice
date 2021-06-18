@@ -1,0 +1,15 @@
+* SPICE3 file created from ringosc.ext - technology: sky130A
+
+.subckt inv IN OUT VDD VSS
+X0 OUT IN VSS VSS sky130_fd_pr__nfet_01v8 w=1e+06u l=150000u
+X1 OUT IN VDD VDD sky130_fd_pr__pfet_01v8 w=1e+06u l=150000u
+.ends
+
+
+* Top level circuit ringosc
+
+Xinv_0 IN inv_1/IN VDD VSS inv
+Xinv_1 inv_1/IN inv_2/IN VDD VSS inv
+Xinv_2 inv_2/IN IN VDD VSS inv
+.end
+
