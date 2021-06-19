@@ -5,7 +5,9 @@ PSS Simulation of the VCO subckts
 
 *Xosc1 6 0 idealVCO
 
-Xosc1 6 0 0 0 0 0 ColpitOscilator
+*Xosc1 6 0 0 0 0 0 ColpitOscilator
+
+Xosc1 6 ColpitOscilator
 
 * PSS Analysis
 * .pss gfreq tstab oscnob psspoints harms sciter steadycoeff <uic>

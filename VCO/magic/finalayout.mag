@@ -1,0 +1,17 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1624061269
+use sky130_fd_pr__cap_mim_m3_2_S73PZ3  sky130_fd_pr__cap_mim_m3_2_S73PZ3_1
+timestamp 1624061269
+transform 1 0 -11875 0 1 2908
+box -1451 -1201 1473 1201
+use sky130_fd_pr__cap_mim_m3_2_S73PZ3  sky130_fd_pr__cap_mim_m3_2_S73PZ3_0
+timestamp 1624061269
+transform 1 0 -10243 0 1 6370
+box -1451 -1201 1473 1201
+use sky130_fd_pr__nfet_01v8_YDLQLF  sky130_fd_pr__nfet_01v8_YDLQLF_0
+timestamp 1624061269
+transform 1 0 -13870 0 1 6167
+box -1457 -1160 1457 1160
+<< end >>

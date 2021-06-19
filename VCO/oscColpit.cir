@@ -1,0 +1,37 @@
+Source common amplifier
+
+.lib "~/Circuits/skywater/skywater-pdk/libraries/sky130_fd_pr/latest/models/sky130.lib.spice" tt
+
+Vdd 1 0 1.8
+
+L1 1 D1v8 7n
+R1 1 D1v8 662
+*R1 D1v88 D1v8 73
+
+*Cb D1v8 out 1
+*Rl out  0   50
+
+Vbias G1v8 0 0.8V
+
+XM1 D1v8 G1v8 S1v8 0 sky130_fd_pr__nfet_01v8 L=1 W=95
+
+Ibias S1v8 0 1m
+
+C1 D1v8 S1v8 0.13p
+C2 S1v8 0    0.13p
+
+.op
+*.tran 0.01n 200ns
+.pss 4e9 200n D1v8 1024 5 150 5e-3 uic
+.control
+run
+plot V(out)
+plot V(D1v8)
+print @m.xm2.msky130_fd_pr__nfet_01v8[gm]
+* = 4.363036e-03
+*print
+
+*plot mag(V(out))
+*exit
+.endc
+.end
